@@ -20,6 +20,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "json-schema", "< 2.3"
   spec.add_dependency "randexp"
+  spec.add_dependency "regexp-examples"
 
   spec.add_development_dependency "bundler", "~> 1.6"
   spec.add_development_dependency "rake"

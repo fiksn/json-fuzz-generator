@@ -1,3 +1,5 @@
+require 'regexp-examples'
+
 module JSON
   module Fuzz
     module Generator
@@ -5,11 +7,15 @@ module JSON
         class Pattern 
           class << self
             def invalid_params(attributes)
-              raise "not impremented"
+              pattern = attributes["pattern"]
+              regex = Regexp.new pattern
+              regex.random_example
             end
 
             def valid_param(attributes)
-              raise "not impremented"
+              pattern = attributes["pattern"]
+              regex = Regexp.new pattern
+              regex.random_example
             end
           end
         end
