@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    json-fuzz-generator (0.0.2)
+    json-fuzz-generator (0.0.3)
       json-schema (< 2.3)
       randexp
       regexp-examples
@@ -48,4 +48,4 @@ DEPENDENCIES
   rspec
 
 BUNDLED WITH
-   2.1.4
+   1.17.2
